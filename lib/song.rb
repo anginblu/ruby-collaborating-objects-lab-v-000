@@ -6,7 +6,6 @@ attr_accessor :name, :artist
   end
 
   def artist=(artist_name)
-    artist = Artist.find_or_create_by_name(artist_name)
     @artist = artist
   end
 
