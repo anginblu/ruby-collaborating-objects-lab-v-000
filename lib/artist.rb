@@ -22,7 +22,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
 #    find(name) ? find(name) : create(name)
-    if @@all.any?{|i| i.name == name}
+    if all.any?{|i| i.name == name}
       new_artist = @@all.find{|i| i.name == name}
     else
       new_artist = Artist.new(name)
