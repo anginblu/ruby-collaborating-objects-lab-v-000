@@ -28,7 +28,7 @@ class Artist
       new_artist = Artist.new(name)
       new_artist.save
     end
-    new_artist
+    
   end
 
 #  def self.find(name)
