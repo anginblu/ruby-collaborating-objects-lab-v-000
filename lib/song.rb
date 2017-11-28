@@ -5,10 +5,6 @@ attr_accessor :name, :artist
     @name = name
   end
 
-  def artist=(artist_name)
-    @artist = artist
-  end
-
 
   def self.new_by_filename(file_name)
     file = file_name.split(" - ")
